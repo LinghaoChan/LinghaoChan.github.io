@@ -488,8 +488,9 @@ section {
 }
 
 .about .content h3 {
+  font-family: '华文行楷';
   font-weight: 700;
-  font-size: 34px;
+  font-size: 50px;
   color: #2f4d5a;
   margin-bottom: 30px;
 }
@@ -530,8 +531,9 @@ section {
 }
 
 .about .icon-boxes .icon-box h4 {
+  font-family: 楷体;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 1000;
   margin: 0 0 10px 0;
 }
 
@@ -822,6 +824,7 @@ section {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -834,7 +837,8 @@ section {
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
+  font-family: '华文新魏';
+  font-size: 18px;
   color: #999;
   margin: 0;
 }
