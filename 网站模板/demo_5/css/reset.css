@@ -1,0 +1,118 @@
+
+/*
+ * ÖØÖÃä¯ÀÀÆ÷Ä¬ÈÏÑùÊ½
+ */
+
+html,body,div,ul,ol,li,dl,dt,dd,table,tr,td,p,input,button,textarea,form,span,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+html,body{
+	line-height:200%; 
+	background:#FEFEFE; 
+	color:#444; 
+	font-size:14px;
+	cursor:default;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal; 
+	font-family:"Î¢ÈíÑÅºÚ", Arial, sans-serif;
+}
+ul,li,ol{
+	list-style:none;
+}
+img{
+	display:block;
+	border:none;
+}
+a{
+	display:block;
+	text-decoration:none;
+	color:#444;
+}
+a:hover{
+	color:#222;
+	text-decoration:underline;
+}
+a:active{
+	color:#222;
+}
+/*Çë³ö¸¡¶¯*/
+.clearfix{
+	zoom:1;
+	clear:both;
+}
+.clearfix:after{
+	display:block;
+	clear:both;
+	content:'';
+	visibility:hidden;
+	height:0;
+}
+
+.p10{
+	padding:10px;
+}
+.p20{
+	padding:20px;
+}
+.p5{
+	padding:5px;
+}
+.m5{
+	margin:5px;
+}
+.m10{
+	margin:10px;
+}
+.m20{
+	margin:20px;
+}
+.mt5{
+	margin-top:5px;
+}
+.mt10{
+	margin-top:10px;
+}
+.mt15{
+	margin-top:15px;
+}
+.mt20{
+	margin-top:20px;
+}
+.ml5{
+	margin-left:5px;
+}
+.ml20{
+	margin-left:20px;
+}
+.ml10{
+	margin-left:10px;
+}
+.ml15{
+	margin-left:15px;
+}
+.border{
+	border:1px solid #ddd;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.blue{
+	color:#035ba6 !important;
+	border-bottom:2px solid #035ba6 !important;
+	position:relative;
+	padding-left:16px;
+}
+.blue:before{
+	position:absolute;
+	left:10px;
+	top:6px;
+	height:24px;
+	width:2px;
+	background:#035ba6;
+	content:'';
+}

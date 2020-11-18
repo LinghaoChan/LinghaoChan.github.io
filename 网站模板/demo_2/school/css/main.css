@@ -1,0 +1,55 @@
+ /*初始化兼容*/
+html {overflow-y:scroll;} 
+body {margin:0; padding:0; font:12px"\5B8B\4F53",sans-serif;background:#ffffff;} 
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;} 
+table,td,tr,th{font-size:12px;} 
+li{list-style-type:none;} 
+img{vertical-align:top;border:0;} 
+ol,ul {list-style:none;} 
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;} 
+address,cite,code,em,th {font-weight:normal; font-style:normal;} 
+#index{
+    width:100%;
+    min-width:1366px;
+    max-width:1600px;
+    margin:0 auto;
+}
+.centerbox{
+    width:1200px;
+    margin:0 auto;
+}
+.head{
+    width:100%;
+    height:115px;
+    display:table;
+    background:url(../resource/head.jpg) no-repeat center center;
+    background-size:100% 100%;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../resource/head.jpg',sizingMethod='scale');
+}
+.head_sus{
+    margin-bottom:50px;
+}
+.head span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.head span img{
+    display:block;
+    margin:0 auto;
+}
+
+
+.ad{
+    width:100%;
+}
+.ad img{
+    width:100%;
+    height:auto;
+}
+.clear:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}   

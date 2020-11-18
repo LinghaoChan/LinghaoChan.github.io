@@ -1,0 +1,160 @@
+.education{
+    width:100%;
+    height:448px;
+    box-sizing:border-box;
+    background:#fff;
+}
+.education_info{
+    padding:20px 0;
+}
+.education_info_box{
+    float:left;
+    width:33%;
+    padding:0 2%;
+    box-sizing:border-box;
+}
+.education_info_box .education_pic_box{
+    width:100%;
+}
+.education_pic_box img{
+    width:100%;
+}
+.education_title{
+    padding:20px 0 16px 0;
+}
+.education_title .education_title_cn{
+    font-size:18px;
+    color:#353535;
+}
+.education_title .education_title_en{
+    color:#670001;
+    font-size:12px;
+}
+.education_list li{
+    line-height:32px;
+    padding-left:10px;
+    cursor:pointer;
+    color:#585858;
+    font-size:13px;
+    background:url(../resource/list.png) no-repeat left center;
+}
+.education_list li:hover{
+    color:#883c92;
+}
+.school_introduce{
+    width:100%;
+    height:322px;
+    padding-bottom:40px;
+    background:#fff;
+}
+.school_introduce .school{
+    width:66.6%;
+    height:322px;
+    background:blue;
+    float:left;
+    position:relative;
+}
+.school_introduce .school img{
+    width:100%;
+    height:100%;
+}
+.school_detail{
+    width:276px;
+    height:322px;
+    background:rgba(0,0,0,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8000000,endColorstr=#C8000000);
+    position:absolute;
+    top:0;
+    right:0;
+    box-sizing:border-box;
+    padding:16px 14px;
+}
+.school_detail .detail_icon{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    cursor:pointer;
+}
+.school_detail p{
+    color:#fff;
+    font-size:13px;
+    line-height:20px;
+    padding-bottom:18px;
+}
+.school_introduce .people{
+    width:30%;
+    box-sizing:border-box;
+    padding:18px 14px;
+    height:322px;
+    background:#883c92;
+    float:right;
+}
+/*人员介绍*/
+.people_title{
+    text-align:center;
+    padding-bottom:26px;
+}
+.people_title .people_title_cn{
+    font-size:18px;
+    color:#fff;
+}
+.people_title .people_title_en{
+    font-size:14px;
+    color:#fff;
+    padding-left:8px;
+}
+.people_info{
+    position:relative;
+}
+.people_info:hover .people_info_left{
+    display:block;
+}
+.people_info:hover .people_info_right{
+    display:block;
+}
+.people_info_left{
+    width:36px;
+    height:36px;
+    position:absolute;
+    top:50%;
+    margin-top:-36px;
+    left:-4px;
+    z-index:999;
+    cursor:pointer;
+    display:none;
+}
+.people_info_right{
+    width:36px;
+    height:36px;
+    position:absolute;
+    top:50%;
+    margin-top:-36px;
+    right:-4px;
+    z-index:999;
+    cursor:pointer;
+    display:none;
+}
+.people_img_box{
+    float:left;
+}
+.people_msg{
+    width:116px;
+    float:right;
+}
+.people_msg .people_msg_t{
+    font-size:16px;
+    color:#fff;
+    padding-bottom:18px;
+}
+.people_msg .people_msg_m{
+    font-size:12px;
+    display:inline-block;
+    color:#fff;
+    line-height:20px;
+}
+.people_msg span{
+    padding-left:6px;
+    cursor:pointer;
+    color:#fff;
+    font-size:12px;
+}

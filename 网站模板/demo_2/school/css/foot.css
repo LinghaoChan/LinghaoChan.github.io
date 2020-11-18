@@ -1,0 +1,64 @@
+/*校内链接*/
+.school_link{
+    width:100%;
+    height:50px;
+    box-sizing:border-box;
+    background:#eee;
+    line-height:50px;
+}
+.school_link span{
+    padding:0 18px;
+    font-size:15px;
+    font-family: '微软雅黑';
+    cursor:pointer;
+    font-weight:700;
+}
+.foot{
+    width:100%;
+    height:210px;
+    box-sizing:border-box;
+    background:#883c92;
+    border-top:5px solid #e587bc;
+}
+.foot_link{
+    width:50%;
+    float:left;
+    padding-top:18px;
+}
+.foot_link img{
+    width:auto;
+    height:84px;
+}
+.foot_link p{
+    font-family: '微软雅黑';
+    color:#fff;
+    font-size:14px;
+    line-height:30px;
+}
+.foot_link p .link_url{
+    cursor:pointer;
+}
+
+.qcode_box{
+    width:33.3%;
+    float:right;
+    padding:9px 18px;
+    box-sizing:border-box;
+}
+.qcode_box img{
+    display:block;
+    height:100%;
+    width:auto;
+    float:left;
+}
+.qcode_box .detail_info{
+    float:left;
+    padding-left:20px;
+    padding-top:2px;
+}
+.qcode_box .detail_info p{
+    line-height:26px;
+    font-size:14px;
+    color:#fff;
+    font-family: '微软雅黑';
+}

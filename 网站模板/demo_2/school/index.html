@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>爱为书院</title>
+        <script src="js/swiper.min.js"></script>
+        <script src='js/jquery-1.10.1.min.js'></script>
+        <script src='js/clamp.min.js'></script>
+        <link rel="stylesheet" href='css/main.css'>
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel='stylesheet' href='css/animate.self.css'>
+        <link rel="stylesheet" href="css/font.css">
+        <style type="text/css">
+            /*轮播栏*/
+            .main{
+                width:100%;
+            }
+            .main .swipe{
+                width:100%;
+                height:auto;
+                position:relative;
+            }
+            .swipe .swiper-container1{
+                width:100%;
+                /*height:600px;*/
+            }
+            .swipe img{
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            /*分页器*/
+            .pagination {
+              position: absolute;
+              z-index: 20;
+              bottom: 10px;
+              width: 100%;
+              text-align: center;
+            }
+            .swiper-pagination-switch {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              border-radius: 12px;
+              background: #883c92;
+              margin: 0 5px;
+              opacity: 0.8;
+              cursor: pointer;
+            }
+            .swiper-active-switch {
+              background: #fff;
+            }
+        </style>
+        <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/news_notice.css">
+        <link rel="stylesheet" href="css/exhibition.css">
+        <link rel="stylesheet" href="css/education_school.css">
+        <link rel="stylesheet" href="css/foot.css">
+    </head>
+    
+    <body>
+        <div id='index'>
+            <div class='head'>
+                <span><img src="resource/aiweilogo.png" /></span>    
+            </div>
+            <div class='banner'>
+                <ul class='nav_main'>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>首 页</p>
+                            <p class='nav_list_en'>HOME</p>
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt' onclick='routerGo()'>
+                            <p>学校介绍</p>
+                            <p class='nav_list_en'>INTRODUCED</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info'>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>新闻中心</p>
+                            <p class='nav_list_en'>NEWS</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info'>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>教育教学</p>
+                            <p class='nav_list_en'>EDUCATION TEACHING</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info'>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>学部特色</p>
+                            <p class='nav_list_en'>FEATURES</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info'>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>申请入学</p>
+                            <p class='nav_list_en'>APPLY</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info info_left'>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>校园服务</p>
+                            <p class='nav_list_en'>SERVICE</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info info_left'>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>对外联络</p>
+                            <p class='nav_list_en'>FOREIGN</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info info_left '>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class='nav_list'>
+                        <div class='nav_list_txt'>
+                            <p>学校管理</p>
+                            <p class='nav_list_en'>MANAGEMENT</p>
+                        </div>
+                        <div class='nav_list_info'>                            
+                            <ul class='nav_info_list'>
+                                <li>卓越教师</li>
+                                <li>精彩课堂</li>
+                                <li>课堂方案</li>
+                                <li>国际视野</li>
+                                <li>学生社团</li>
+                            </ul>
+                            <div class='info info_left'>
+                                <img src="resource/navpic.jpg">
+                                <p>爱为书院是由华为控股投资公司出资由清华附中负责学校运营管理的一所学校。</p>
+                            </div>                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class='main'>
+                <div class='swipe'>
+                    <div class="swiper-container swiper-container1">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-no-swiping">
+                            <img src="resource/swipe.jpg">
+                        </div>
+                        <div class="swiper-slide swiper-no-swiping">
+                            <img src="resource/swipe.jpg">
+                        </div>
+                        <div class="swiper-slide swiper-no-swiping">
+                            <img src="resource/swipe.jpg">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <div class='news_notice'>
+                    <div class='centerbox'>
+                        <div class='news load'>
+                            <div class='news_btn_box'>
+                                <div class="left"><img src="resource/left.png"></div> 
+                                <div class="right"><img src="resource/right.png"></div>    
+                            </div>                            
+                            <div class='title'>
+                                <div class='title_left'>
+                                    <span class='title_left_cn'>综合新闻</span>
+                                    <span class='title_left_en'>News</span>
+                                </div>
+                                <div class='title_right'>
+                                    <span>更多>></span>
+                                </div>    
+                            </div>
+                            <div class='swiper-container swiper-container2'>
+                                <div class='swiper-wrapper'>
+                                    <div class='swiper-slide swiper-no-swiping'>
+                                        <div class='news_info'>
+                                            <div class='news_pic_box'>
+                                                <img class='animated' src="resource/news1.jpg">
+                                            </div>
+                                            <p class='news_info_title'>组织学生参加彩虹农庄活动</p>
+                                            <p class='news_info_txt'>组织学生参加彩虹农庄活动组织学生参加彩虹农庄活动</p>
+                                            <div class='news_info_msg'>
+                                                <span>2016-07-10</span>
+                                                <span>12:50</span>
+                                                <span>|</span>
+                                                <span>编辑：小丽</span>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class='swiper-slide swiper-no-swiping'>
+                                        <div class='news_info'>
+                                            <div class='news_pic_box'>
+                                                <img src="resource/news2.jpg">
+                                            </div>
+                                            <p class='news_info_title'>学生欢乐采摘</p>
+                                            <p class='news_info_txt'>五一期间学校组织学生参加采摘体验劳动，帮助农民伯伯收摘西红柿</p>
+                                            <div class='news_info_msg'>
+                                                <span>2016-07-10</span>
+                                                <span>12:50</span>
+                                                <span>|</span>
+                                                <span>编辑：小丽</span>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class='swiper-slide swiper-no-swiping'>
+                                        <div class='news_info'>
+                                            <div class='news_pic_box'>
+                                                <img src="resource/news3.jpg">
+                                            </div>
+                                            <p class='news_info_title'>集体唱歌，欢乐多多</p>
+                                            <p class='news_info_txt'>学前班的小朋友在户外游玩，休息期间在老师的带领下一起唱歌，小朋友很开心学前班的小朋友在户外游玩，休息期间在老师的带领下一起唱歌，小朋友很开心学前班的小朋友在户外游玩，休息期间在老师的带领下一起唱歌，小朋友很开心</p>
+                                            <div class='news_info_msg'>
+                                                <span>2016-07-10</span>
+                                                <span>12:50</span>
+                                                <span>|</span>
+                                                <span>编辑：小丽</span>
+                                            </div>
+                                        </div>
+                                    </div>                        
+                                </div>    
+                            </div>
+                        </div>
+                        <div class='notice load'>
+                            <div class='noticebox'>
+                                <div class='title'>
+                                    <div class='title_left'>
+                                        <span class='title_left_cn'>通知公告</span>
+                                        <span class='title_left_en'>Notice</span>
+                                    </div>
+                                    <div class='title_right'>
+                                        <span>更多>></span>
+                                    </div>    
+                                </div>
+                                <ul class='notice_info'>
+                                    <li style='padding-top:0;'><span>[2017-02-10]</span>爱为书院网站即将正式运营通知！</li>
+                                    <li><span>[2016-08-10]</span>爱为书院K学前班秋季招生需要注意事项！</li>
+                                    <li><span>[2016-08-10]</span>爱为书院K学前班秋季招生需要注意事项！</li>
+                                    <li style='border:none'><span>[2016-07-15]</span>爱为书院专门为K学前班特制的午餐食谱搭配</li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class='exhibition'>
+                    <div class='centerbox'>
+                        <div class='box_title'>
+                            <div class='title yahei'>
+                                <span class='title_cn'>卓越教师</span>
+                                <span class='title_en'>Teachers</span>
+                            </div>
+                        </div>
+                        <div class='load'>
+                            <ul class='exhibition_menu yahei'>
+                                <li>
+                                    <div class='exhibitionLi ischoose'>
+                                        <p class='menu_cn'>幼儿园</p>
+                                        <p class='menu_en'>kindergarden</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class='exhibitionLi'>
+                                        <p class='menu_cn'>小学</p>
+                                        <p class='menu_en'>kindergarden</p>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div class='exhibitionLi'>
+                                        <p class='menu_cn'>初中</p>
+                                        <p class='menu_en'>kindergarden</p>
+                                    </div>                                
+                                </li>
+                                <li>
+                                    <div class='exhibitionLi'>
+                                        <p class='menu_cn'>高中</p>
+                                        <p class='menu_en'>kindergarden</p>
+                                    </div>                                
+                                </li>
+                            </ul>
+                            <div class='exhibition_info'>
+                                <div class="exhibition_info_left"><img src="resource/left1.png"></div> 
+                                <div class="exhibition_info_right"><img src="resource/right1.png"></div> 
+                                <div class='swiper-container swiper-container3'>
+                                    <div class='swiper-wrapper'>
+                                        <div class='swiper-slide swiper-no-swiping'>
+                                            <div class='exhibition_box'>
+                                                <div class='exhibition_pic_box'>
+                                                    <img src="resource/teacher1.jpg">
+                                                    <div class='exhibition_info_title'></div>
+                                                    <div class='exhibition_info_title_box yahei'>
+                                                        <p>王小丽</p>
+                                                        <p>2年1班数学老师</p>
+                                                    </div>
+                                                    <div class='exhibition_info_detail'>
+                                                        <p class='detail_name yahei'>王小丽</p>
+                                                        <p class='detail_class yahei'>小学2年级1班数学老师</p>
+                                                        <p class='detail_main songti'>毕业于北京大学毕业于北京大学毕业于北京大学毕业于北京大学</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class='swiper-slide swiper-no-swiping'>
+                                            <div class='exhibition_box'>
+                                                <div class='exhibition_pic_box'>
+                                                    <img src="resource/teacher1.jpg">
+                                                    <div class='exhibition_info_title'></div>
+                                                     <div class='exhibition_info_title_box yahei'>
+                                                        <p>王小丽</p>
+                                                        <p>2年1班数学老师</p>
+                                                    </div>
+                                                    <div class='exhibition_info_detail'>
+                                                        <p class='detail_name yahei'>王小丽</p>
+                                                        <p class='detail_class yahei'>小学2年级1班数学老师</p>
+                                                        <p class='detail_main songti'>毕业于北京大学毕业于北京大学毕业于北京大学毕业于北京大学</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='swiper-slide swiper-no-swiping'>
+                                            <div class='exhibition_box'>
+                                                <div class='exhibition_pic_box'>
+                                                    <img src="resource/teacher1.jpg">
+                                                    <div class='exhibition_info_title'></div>
+                                                     <div class='exhibition_info_title_box yahei'>
+                                                        <p>王小丽</p>
+                                                        <p>2年1班数学老师</p>
+                                                    </div>
+                                                    <div class='exhibition_info_detail'>
+                                                        <p class='detail_name yahei'>王小丽</p>
+                                                        <p class='detail_class yahei'>小学2年级1班数学老师</p>
+                                                        <p class='detail_main songti'>毕业于北京大学毕业于北京大学毕业于北京大学毕业于北京大学</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='swiper-slide swiper-no-swiping'>
+                                            <div class='exhibition_box'>
+                                                <div class='exhibition_pic_box'>
+                                                    <img src="resource/teacher1.jpg">
+                                                    <div class='exhibition_info_title'></div>
+                                                     <div class='exhibition_info_title_box yahei'>
+                                                        <p>王小丽</p>
+                                                        <p>2年1班数学老师</p>
+                                                    </div>
+                                                    <div class='exhibition_info_detail'>
+                                                        <p class='detail_name yahei'>王小丽</p>
+                                                        <p class='detail_class yahei'>小学2年级1班数学老师</p>
+                                                        <p class='detail_main songti'>毕业于北京大学毕业于北京大学毕业于北京大学毕业于北京大学</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                         
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='ad load'>
+                    <img src='resource/ad.jpg'>
+                </div>
+                <div class='education'>
+                    <div class='centerbox'>
+                        <div class='box_title'>           
+                            <div class='title' style='width:302px;'>
+                                <span class='title_cn'>教育教学</span>
+                                <span class='title_en'>Education Teaching</span>
+                            </div>
+                        </div>
+                        <div class='education_info'>
+                            <div class='education_info_box load'>
+                                <div class='education_pic_box'>
+                                    <img src="resource/education1.jpg">
+                                </div>
+                                <div class='education_msg'>
+                                    <div class='education_title yahei'>
+                                        <span class='education_title_cn'>精彩课堂</span>
+                                        <span class='education_title_en'>Excellent Course</span>
+                                    </div>
+                                    <ul class='education_list'>
+                                        <li>给父母最好的选择，给孩子最好...</li>
+                                        <li>启迪人生，健康成长</li>
+                                        <li>自尊，自信，友善，善良</li>
+                                        <li>关注基本素养，培育有自信，守规则</li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                            <div class='education_info_box load'>
+                                <div class='education_pic_box'>
+                                    <img src="resource/education2.jpg">
+                                </div>
+                                <div class='education_msg'>
+                                    <div class='education_title yahei'>
+                                        <span class='education_title_cn'>精彩课堂</span>
+                                        <span class='education_title_en'>Excellent Course</span>
+                                    </div>
+                                    <ul class='education_list'>
+                                        <li>给父母最好的选择，给孩子最好...</li>
+                                        <li>启迪人生，健康成长</li>
+                                        <li>自尊，自信，友善，善良</li>
+                                        <li>关注基本素养，培育有自信，守规则</li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                            <div class='education_info_box load'>
+                                <div class='education_pic_box'>
+                                    <img src="resource/education3.jpg">
+                                </div>
+                                <div class='education_msg'>
+                                    <div class='education_title yahei'>
+                                        <span class='education_title_cn'>精彩课堂</span>
+                                        <span class='education_title_en'>Excellent Course</span>
+                                    </div>
+                                    <ul class='education_list'>
+                                        <li>给父母最好的选择，给孩子最好...</li>
+                                        <li>启迪人生，健康成长</li>
+                                        <li>自尊，自信，友善，善良</li>
+                                        <li>关注基本素养，培育有自信，守规则</li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='school_introduce'>
+                    <div class='centerbox'>
+                        <div class='school load'>
+                            <img src="resource/school.jpg">
+                            <div class='school_detail'>
+                                <div class='people_title'>
+                                    <span class='people_title_cn'>学校简介</span>
+                                    <span class='people_title_en'>School Profile</span>
+                                </div>
+                                <p class='yahei'>
+                                    爱为书院(A+W ACADEMY)是由华为控股投资公司出资，由清华附中负责学校运营管理的一所学校。
+                                </p>
+                                <p class='yahei'>
+                                    A+W Academy is a school funded by Huawei and managed by Tsinghua University High School。
+                                </p>
+                                <p class='yahei'>
+                                    学校采用清华附中国际课程,以中西合璧的教育理念,博采中国教育和国际教育之所长,保护中国文化中的精髓部分,提供扎根中国、清华特色的国际教育。
+                                </p>
+                                <div class='detail_icon'><img src="resource/detailicon.png" /></div>
+                            </div>
+                        </div>
+                        <div class='people load'>
+                            <div class='people_title yahei'>
+                                <span class='people_title_cn'>领导团队</span>
+                                <span class='people_title_en'>Leadership</span>
+                            </div>
+                            <div class='people_info'>
+                                <div class="people_info_left"><img src="resource/left2.png"></div> 
+                                <div class="people_info_right"><img src="resource/right2.png"></div> 
+                                <div class='swiper-container swiper-container4'>
+                                    <div class='swiper-wrapper'>
+                                        <div class='swiper-slide swiper-no-swiping'>
+                                            <div class='people_box'>
+                                                <div class='people_img_box'>
+                                                    <img src="resource/people1.jpg">
+                                                </div>
+                                                <div class='people_msg yahei'>
+                                                    <p class='people_msg_t'>学校领导</p>
+                                                    <p class='people_msg_m'>学校领导主要负责什么事物，毕业哪所学校，所学什么专业学校领导主要负责什么事物，毕业哪所学校，所学什么专业学校领导主要负责什么事物,毕业哪所学校，所学</p><span class='yahei'>[查看详情]</span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='foot'>
+                <div class='school_link'>
+                    <div class='centerbox'>
+                        <span>校图书馆</span>
+                        <span>办公系统</span>
+                        <span>选课平台</span>
+                        <span>学生综合素质评分系统</span>
+                        <span>学校邮箱</span>    
+                    </div>
+                </div>
+                <div class='centerbox'>
+                    <div class='foot_link'>
+                        <img src="resource/aiweilogo2.png">
+                        <p>友情链接：<span class='link_url'>清华大学附属中学</span><span style='padding:0 8px'>|</span><span class='link_url'>华为官网</span></p>
+                    </div>
+                    <div class='qcode_box'>
+                        <img src="resource/qcode.jpg">
+                        <div class='detail_info'>
+                            <p><span>地址：</span><span>爱为学院</span></p>
+                            <p><span>邮编：</span><span>100000</span></p>
+                            <p><span>电话：</span><span>010-12334566</span></p>
+                            <p><span>网址：</span><span><a href="www.aw-edu.com">www.aw-edu.com</a></span></p>
+                            <p><span>版权信息：</span><span>版权归爱为书院所有</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='js/compatible.js'></script>
+        <script src='js/main.js'></script>
+        <script type="text/javascript">
+            function routerGo(){
+                window.location.href='page/detail.html';
+            }
+            $(function(){
+                $('.exhibitionLi').each(function(index){
+                    $(this).off('click').on('click',function(){
+                        $(this).addClass('ischoose');
+                        $(this).parent().siblings().children().removeClass('ischoose');
+                    })
+                })
+            })
+            
+            function hiddenP(obj,line){
+                for(var i=0;i<obj.length;i++){
+                    $clamp(obj[i], {clamp: line, useNativeClamp: false});    
+                }
+            }
+            /*兼容实现多浏览器文本隐藏*/
+            var header = document.getElementsByTagName('body')[0].getElementsByClassName('people_msg_m')  
+            var news = document.getElementsByTagName('body')[0].getElementsByClassName('news_info_txt') 
+            hiddenP(header,9);
+            hiddenP(news,3)   
+            $('.people_msg_m').css('display','inline')
+
+            if(navigator.appVersion.indexOf("MSIE 7.0")>0||navigator.appVersion.indexOf("MSIE 6.0")>0){
+                alert('浏览器版本过低！')
+            }else{
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,193 @@
+ .exhibition{
+    width:100%;
+    height:468px;
+    box-sizing:border-box;
+    background:#fff;
+}
+.box_title{
+    padding:30px 0;
+    width:100%;
+}
+.box_title .title{
+    height:40px;
+    line-height:40px;
+    width:220px;
+    margin:0 auto;
+    text-align:center;
+    background:#883c92;
+    color:#fff;
+}
+.box_title .title .title_cn{
+    font-size:22px;
+}
+.box_title .title .title_en{
+    font-size:16px;
+}
+
+.exhibition_menu{
+    width:128px;
+}
+.exhibition_menu li{
+    width:134px;
+    border-bottom:1px solid #c49ec9;
+    cursor:pointer;
+}
+.exhibition_menu li div{
+    width:112px;
+    /*box-sizing:border-box;*/
+    padding:18px 22px 18px 0;
+    background:#883c92;
+    transition:0.5s ease;
+}
+.exhibition_menu li:hover div{
+    padding-right:40px;
+    background:#883c92 url(../resource/arrow.png) no-repeat 88% center;
+}
+.exhibition_menu .ischoose{
+    padding-right:40px;
+    background:#883c92 url(../resource/arrow.png) no-repeat 88% center;
+}
+.exhibition_menu li p{
+    text-align:right;
+    color:#eae1ec;
+}
+.exhibition_menu li p.menu_cn{
+    font-size:18px;
+}
+.exhibition_menu li p.menu_en{
+    font-size:12px;
+}
+.exhibition_menu{
+    float:left;
+    width:15.8%;
+}
+.exhibition_info{
+    width:84.2%;
+    float:left;
+    position:relative;
+}
+.swiper-container3{
+    width:100%;
+    /*height:356px;*/
+}
+/*轮播按钮*/
+.exhibition_info_left{
+    width:24px;
+    height:24px;
+    position:absolute;
+    left:-26px;
+    top:50%;
+    cursor:pointer;
+    margin-top:-12px;
+    z-index:999;
+}
+.exhibition_info_right{
+    width:24px;
+    height:24px;
+    position:absolute;
+    right:-26px;
+    top:50%;
+    cursor:pointer;
+    margin-top:-12px;
+    z-index:999;
+}
+
+.exhibition_info .exhibition_box{                
+    padding:0 22px;
+}
+.exhibition_info .exhibition_pic_box{
+    position:relative;
+    overflow:hidden;
+}
+.exhibition_info .exhibition_box img{
+    width:100%;
+    height:100%;
+}
+
+/*图片悬浮层*/
+.exhibition_info_title{
+    background:#fff;
+    position:absolute;
+    bottom:-56px;
+    left:-80px;
+    width:340px;
+    height:60px;
+    z-index:888;
+    transform-origin:0 60px;
+    transform:rotate(-10deg);
+    transition:0.5s ease;
+}
+.exhibition_info_title_box{
+    width:100%;
+    position:absolute;
+    z-index:889;
+    right:0;
+    bottom:0;
+    transition:0.5s ease;
+}
+.exhibition_info_title_box p{
+    text-align:right;
+    font-size:14px;
+    line-height:20px;
+}
+.exhibition_info .exhibition_pic_box:hover .exhibition_info_title{
+    transform:rotate(0);
+}
+.exhibition_info .exhibition_pic_box:hover .exhibition_info_title_box{
+    bottom:-50px;
+}
+.exhibition_info_detail{
+    position:absolute;
+    padding:48px 18px;
+    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    top:0;
+    left:0;
+    transform: scale(0);
+    transition:0.5s ease;
+}
+.exhibition_info .exhibition_pic_box:hover .exhibition_info_detail{
+    transform:scale(1);
+}
+.exhibition_info_detail p{
+    color:#fff;
+    font-size:13px;
+}
+.exhibition_info_detail p.detail_name{
+    font-size:15px;
+    line-height:42px;
+    padding-bottom:10px;
+}
+.exhibition_info_detail p.detail_main{
+    padding-top:22px;
+    line-height:20px;
+    text-align:justify;
+}
+
+/*IE8*/
+.exhibition_info_title_box_ie{
+    width:100%;
+    position:absolute;
+    z-index:889;
+    left:0;
+    background:#fff;
+    height:40px;
+    bottom:14px;
+}
+.exhibition_info_title_box_ie p{
+    text-align:right;
+    font-size:14px;
+    line-height:20px;
+}
+.exhibition_info .exhibition_pic_box:hover .exhibition_info_title_box_ie{
+    bottom:-50px;
+}
+.exhibition_info_detail_ie{
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8000000,endColorstr=#C8000000);
+    display:none;
+}
+.exhibition_info .exhibition_pic_box:hover .exhibition_info_detail_ie{
+    display:block;
+}

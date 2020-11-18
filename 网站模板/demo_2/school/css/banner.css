@@ -1,0 +1,119 @@
+ /*导航栏*/
+.banner{
+    width:100%;
+    height:50px;
+    background:#883c92;
+    top:-50px;
+    border-bottom:2px solid #e587bc;
+    box-sizing:border-box;
+}
+.banner_suspension{
+    width:100%;
+    max-width:1600px;
+    min-width:1366px;
+    height:50px;
+    background:rgba(136,60,146,0.8);
+    border-bottom:2px solid #e587bc;
+    box-sizing:border-box;
+    position:fixed;
+    top:-50px;
+    z-index:9999;
+    transition:0.6s ease;
+}
+.banner_ie{
+    background:#883c92;
+}
+.nav_main{
+    margin:0 auto;
+    width:1200px;
+    font-size:16px;
+}
+.nav_main li.nav_list{
+    float:left;
+    width:auto;
+    min-width:10%;
+    display:inline-block;
+    position:relative;
+}
+.nav_list_txt{
+    cursor:pointer;
+    padding:7px 10px 6px;
+}
+.nav_list_txt p{
+    font-family:'微软雅黑';
+    color:#fff;
+    font-size:16px;
+    letter-spacing:6px;
+    text-align:center;
+    transition:0.6s ease;
+}
+.nav_list_txt .nav_list_en{
+    font-size:12px;
+    letter-spacing:0;
+}
+    /*导航栏内容*/
+.nav_list_info{
+    /*display:none;*/
+    opacity:0;
+    top:50px;
+    width:100%;
+    background:#fff;
+    position:absolute;
+    visibility: hidden;
+    z-index:9999;
+    
+}
+.nav_list_info_ie{
+    display:none;
+}
+.nav_list_info .info{
+    position:absolute;
+    width:200px;
+    height:100%;
+    right:-200px;
+    background:#fff;
+    top:0;
+    box-sizing:border-box;
+    padding:12px 24px;
+    border-left:1px solid #ccc;
+}
+.nav_list_info .info_left{
+    right:0;
+    left:-200px;
+}
+.nav_list_info .info img{
+    width:100%;
+}
+.nav_list_info .info p{
+    width:100%;
+    font-size:12px;
+    line-height:18px;
+    text-align:justify;
+    padding-top:10px
+}
+.nav_info_list{
+    padding:4px 0;
+}
+.nav_info_list li{
+    padding:8px 0;
+    font-size:14px;
+    text-align:center;
+    color:#883c92;
+    cursor: pointer
+}
+.nav_info_list li:hover{
+    color:#000;
+}
+/*菜单显隐*/
+.nav_list:hover .nav_list_txt{
+    background:#fff;
+    padding:7px 10px 6px;
+}
+.nav_list:hover .nav_list_txt p{                
+    color:#883c92;   
+}
+.nav_list:hover div.nav_list_info{
+    visibility: visible;
+    transition:0.6s ease;
+    opacity:1;
+}
