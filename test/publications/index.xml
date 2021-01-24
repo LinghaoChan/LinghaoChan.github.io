@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Liangchen Luo</title>
+    <link>https://www.luolc.com/publications/</link>
+    <description>Recent content in Publications on Liangchen Luo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.luolc.com/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adaptive Gradient Methods with Dynamic Bound of Learning Rate</title>
+      <link>https://www.luolc.com/publications/adabound/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/adabound/</guid>
+      <description>Abstract Adaptive optimization methods such as AdaGrad, RMSProp and Adam have been proposed to achieve a rapid training process with an element-wise scaling term on learning rates. Though prevailing, they are observed to generalize poorly compared with Sgd or even fail to converge due to unstable and extreme learning rates. Recent work has put forward some algorithms such as AMSGrad to tackle this issue but they failed to achieve considerable improvement over existing methods.</description>
+    </item>
+    
+    <item>
+      <title>Learning Personalized End-to-End Goal-Oriented Dialog</title>
+      <link>https://www.luolc.com/publications/personalized-goal-oriented-dialog/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/personalized-goal-oriented-dialog/</guid>
+      <description>Abstract Most existing works on dialog systems only consider conversation content while neglecting the personality of the user the bot is interacting with, which begets several unsolved issues. In this paper, we present a personalized end-to-end model in an attempt to leverage personalization in goal-oriented dialogs. We first introduce a Profile Model which encodes user profiles into distributed embeddings and refers to conversation history from other similar users. Then a Preference Model captures user preferences over knowledge base entities to handle the ambiguity in user requests.</description>
+    </item>
+    
+    <item>
+      <title>Text Assisted Insight Ranking Using Context-Aware Memory Network</title>
+      <link>https://www.luolc.com/publications/insight-ranking/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/insight-ranking/</guid>
+      <description>Abstract Extracting valuable facts or informative summaries from multi-dimensional tables, i.e. insight mining, is an important task in data analysis and business intelligence. However, ranking the importance of insights remains a challenging and unexplored task. The main challenge is that explicitly scoring an insight or giving it a rank requires a thorough understanding of the tables and costs a lot of manual efforts, which leads to the lack of available training data for the insight ranking problem.</description>
+    </item>
+    
+    <item>
+      <title>An Auto-Encoder Matching Model for Learning Utterance-Level Semantic Dependency in Dialogue Generation</title>
+      <link>https://www.luolc.com/publications/auto-encoder-matching-dialog/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/auto-encoder-matching-dialog/</guid>
+      <description>Abstract Generating semantically coherent responses is still a major challenge in dialogue generation. Different from conventional text generation tasks, the mapping between inputs and responses in conversations is more complicated, which highly demands the understanding of utterance-level semantic dependency, a relation between the whole meanings of inputs and outputs. To address this problem, we propose an Auto-Encoder Matching (AEM) model to learn such dependency. The model contains two auto-encoders and one mapping module.</description>
+    </item>
+    
+  </channel>
+</rss>
