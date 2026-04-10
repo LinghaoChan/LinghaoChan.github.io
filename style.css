@@ -258,6 +258,24 @@ ol {
 }
 
 /* ============================================
+   Callout Box
+   ============================================ */
+.callout-box {
+    background: #FDF5ED;
+    border: 2px dashed var(--accent);
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 36px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--dark-brown);
+}
+
+.callout-box a {
+    font-weight: 600;
+}
+
+/* ============================================
    Section
    ============================================ */
 .section {
